@@ -145,3 +145,64 @@ main{
     color: #ED6B4F;
     margin-left: 62px;
 }
+/* media queries start*/
+
+/* for mobile devices  */
+@media only screen and (max-width:688px) {
+    .container{
+        width:100%;
+        justify-items: center;
+    }
+    .section-title{
+        text-align:center;
+    }
+    .players{
+        grid-template-columns:repeat(1,1fr);
+        justify-items:center;
+    }
+    .player,.blog{
+        flex-direction: column;
+    }
+    .player-name{
+        margin-top:10px;
+        text-align: center;
+    }
+    .blogs,.courses{
+        grid-template-columns:repeat(1,1fr);
+
+    }
+    .blog{
+        flex-direction:column;
+        align-items: center;
+    }
+    /* .blog-title{
+        font-size:15px;
+        text-align: center;
+    } */
+    .blog-author{
+        font-size:10px;
+        text-align:center;
+    }
+    .thumbnail>img{
+        width:100%;
+    }
+    /* .courses{
+        display:none;
+    } */
+    .course-banner{
+        margin:auto;
+    }
+}
+/* tablet screen  */
+@media screen and (min-width:689px) and (max-width:992px) {
+    .container{
+        width:100%;
+        /* justify-items: center; */
+    }
+    .blogs,.courses,.players{
+        grid-template-columns:repeat(2,1fr);
+        margin:auto;
+
+    }
+}
+/* media queries end  */
